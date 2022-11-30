@@ -3,8 +3,7 @@
     "dev": "concurrently npm:dev:*",
     "dev:unocss": "unocss \"templates/**/*.html\" -o static/uno.css --watch",
     "dev:zola": "zola serve",
-    "build": "unocss \"templates/**/*.html\" -o static/uno.css && zola build",
-    "help": "unocss --help"
+    "build": "unocss \"templates/**/*.html\" -o static/uno.css && zola build"
   },
   "devDependencies": {
     "@unocss/cli": "latest",
