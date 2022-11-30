@@ -1,0 +1,4 @@
+base_url = "https://iced.rs"
+
+[markdown]
+highlight_code = true
