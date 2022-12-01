@@ -1,4 +1,4 @@
 node_modules
 public
-sass/uno.scss
-sass/tailwind.scss
+sass/_uno.scss
+sass/_tailwind.scss
