@@ -1,12 +1,13 @@
 {
   "scripts": {
     "dev": "concurrently npm:dev:*",
-    "dev:unocss": "unocss \"templates/**/*.html\" -o static/uno.css --watch",
+    "dev:unocss": "cp node_modules/@unocss/reset/tailwind.css static/tailwind.css && unocss \"templates/**/*.html\" -o static/uno.css --watch",
     "dev:zola": "zola serve",
-    "build": "unocss \"templates/**/*.html\" -o static/uno.css && zola build"
+    "build": "cp node_modules/@unocss/reset/tailwind.css static/tailwind.css && unocss \"templates/**/*.html\" -o static/uno.css && zola build"
   },
   "devDependencies": {
     "@unocss/cli": "latest",
+    "@unocss/reset": "latest",
     "concurrently": "latest"
   }
 }
