@@ -7,9 +7,8 @@
   <link href="/site.css" rel="stylesheet">
   <script>
     function createButton() {
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark')
-      }
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.setAttribute('data-theme', 'dark');
       docsearch({
         container: "#docsearch",
         appId: "R2IYF7ETH7",
