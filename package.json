@@ -4,7 +4,7 @@
     "dev:css": "npm run copy && unocss \"templates/**/*.html\" -o sass/_uno.scss --watch",
     "dev:zola": "zola serve",
     "build": "npm run copy && unocss \"templates/**/*.html\" -o sass/_uno.scss && zola build",
-    "copy": "cp node_modules/@unocss/reset/tailwind.css sass/_tailwind.scss && cp node_modules/@docsearch/css/dist/style.css sass/_docsearch.scss && cp node_modules/@docsearch/js/dist/umd/index.js static/docsearch.js && cp node_modules/@docsearch/js/dist/umd/index.js.map static/docsearch.js.map"
+    "copy": "cp node_modules/@unocss/reset/tailwind.css sass/_tailwind.scss && cp node_modules/@docsearch/css/dist/style.css sass/_docsearch.scss && cp node_modules/@docsearch/js/dist/umd/index.js static/docsearch.js"
   },
   "devDependencies": {
     "@docsearch/js": "latest",
